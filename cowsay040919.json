@@ -1,0 +1,71 @@
+[
+    {
+        "id": "e7a1f41e96a2293f",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 600,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "34657328d435a1dd"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "34657328d435a1dd",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {
+            "module": "node-red-contrib-cowsay040919",
+            "type": "cowsay",
+            "version": "0.0.1",
+            "author": "kurve.omkar@gmail.com",
+            "desc": "ok",
+            "keywords": "omkar",
+            "license": "Apache-2.0"
+        },
+        "color": "#DDAA99"
+    },
+    {
+        "id": "34657328d435a1dd",
+        "type": "function",
+        "z": "e7a1f41e96a2293f",
+        "name": "function 1",
+        "func": "msg.payload = \"1\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "128aa9be130995fe",
+        "type": "subflow:e7a1f41e96a2293f",
+        "z": "fe00c989d257bd8f",
+        "name": "",
+        "x": 960,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    }
+]
